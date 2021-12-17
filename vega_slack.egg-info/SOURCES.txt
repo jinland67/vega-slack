@@ -1,0 +1,9 @@
+README.md
+setup.py
+vega_slack/__init__.py
+vega_slack/slack.py
+vega_slack.egg-info/PKG-INFO
+vega_slack.egg-info/SOURCES.txt
+vega_slack.egg-info/dependency_links.txt
+vega_slack.egg-info/requires.txt
+vega_slack.egg-info/top_level.txt

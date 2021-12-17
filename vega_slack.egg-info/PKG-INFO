@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: vega-slack
+Version: 0.1.0
+Summary: Library for using Slack
+Home-page: https://github.com/jinland67/vega-slack.git
+Author: jinland
+Author-email: jinland67@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8.10
+Description-Content-Type: text/markdown
+
+# vega_slack
+> slack message 전송을 위한 라이브러리
+
+    * 의존성:
+        - python 3.8.10 이상
+        - slack-sdk 3.13.0 이상
+
+------------------
+### 사용법
+```
+    # install
+        $  pip install git+https://github.com/jinland67/vega-slack.git
+
+    # chromedriver 사용 시
+        from vega_slack import Slack, SlackError
+                :
+                :
+        slack = Slack(url)
+                :
+        slack.send(blocks)
+```
+
+### blocks sample
+```
+    blocks = [
+        {
+            "type": "header",
+            "text": {
+                "type": "plain_text",
+                "text": "헤더 영역에 작성할 메시지"
+            }
+        },
+        {
+            "type": "section",
+            "text": {
+                "type": "mrkdwn",
+                "text": "타이틀 영역에 작성할 메시지"
+            }
+        },
+        {
+            "type": "section",
+            "text": {
+                "type": "mrkdwn",
+                "text": "섹션 영역에 작성할 메시지"
+            }
+        }
+    ]
+```
+
+
+
